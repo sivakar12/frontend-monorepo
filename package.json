@@ -1,3 +1,9 @@
 {
-    "name": "frontend-monorepo"
+    "name": "frontend-monorepo",
+    "scripts": {
+        "customer-frontend:dev": "pnpm --filter customer-frontend run dev",
+        "customer-frontend:build": "pnpm --filter customer-frontend run build",
+        "admin-frontend:dev": "pnpm --filter admin-frontend run dev",
+        "admin-frontend:build": "pnpm --filter admin-frontend run build"
+    }
 }
