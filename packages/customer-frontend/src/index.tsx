@@ -1,8 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import { Footer } from 'shared';
 
 const App = () => {
-  return <h1>Customer Frontend App</h1>;
+  return (
+    <div>
+      <h1>Customer Frontend App</h1>
+      <Footer />
+    </div>
+  
+  );
 };
 
 const root = ReactDOM.createRoot(document.getElementById('root')!);
