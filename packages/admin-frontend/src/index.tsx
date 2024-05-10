@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import { Footer } from 'shared';
+import { Footer } from '@frontend-monorepo/shared';
 
 const App = () => {
   return (

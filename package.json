@@ -1,9 +1,13 @@
 {
     "name": "frontend-monorepo",
+    "private": true,
+    "workspaces": [
+        "packages/*"
+    ],
     "scripts": {
-        "customer-frontend:dev": "pnpm --filter customer-frontend run dev",
-        "customer-frontend:build": "pnpm --filter customer-frontend run build",
-        "admin-frontend:dev": "pnpm --filter admin-frontend run dev",
-        "admin-frontend:build": "pnpm --filter admin-frontend run build"
+        "customer-frontend:dev": "yarn workspace @frontend-monorepo/customer-frontend dev",
+        "customer-frontend:build": "yarn workspace @frontend-monorepo/customer-frontend build",
+        "admin-frontend:dev": "yarn workspace @frontend-monorepo/admin-frontend dev",
+        "admin-frontend:build": "yarn workspace @frontend-monorepo/admin-frontend build"
     }
 }

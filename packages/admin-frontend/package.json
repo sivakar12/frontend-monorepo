@@ -1,9 +1,10 @@
 {
-    "name": "admin-frontend",
+    "name": "@frontend-monorepo/admin-frontend",
+    "version": "0.0.1",
     "dependencies": {
+        "@frontend-monorepo/shared": "*",
         "react": "^18.3.1",
-        "react-dom": "^18.3.1",
-        "shared": "workspace:"
+        "react-dom": "^18.3.1"
     },
     "scripts": {
         "dev": "vite",
